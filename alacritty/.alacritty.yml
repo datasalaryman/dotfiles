@@ -445,10 +445,11 @@ font:
 #   - (Windows) powershell
 shell:
   program: /bin/zsh
-  args:
-    - -l
-    - -c
-    - "/opt/homebrew/bin/tmux new-session -A -s default -f ~/.config/tmux/tmux.conf"
+  # args:
+  #   - -l
+  #   - -c
+  #   - "/opt/homebrew/bin/tmux new-session -A -s default -f ~/.config/tmux/tmux.conf"
+  # program: /opt/homebrew/bin/tmux
 
 
 # Startup directory
