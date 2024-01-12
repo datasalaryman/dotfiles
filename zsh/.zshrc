@@ -1,7 +1,7 @@
 # Fig pre block. Keep at the top of this file.
 [[ -f "$HOME/.fig/shell/zshrc.pre.zsh" ]] && builtin source "$HOME/.fig/shell/zshrc.pre.zsh"
 # If you come from bash you might have to change your $PATH.
-export PATH=$HOME/bin:$HOME/.local/bin:/opt/homebrew/bin:/opt/homebrew/opt/node@18/bin:$HOME/.gcloud/bin:$PATH:$HOME/.pyenv/shims
+export PATH=$HOME/bin:$HOME/.local/bin:/opt/homebrew/bin:/opt/homebrew/opt/node@18/bin:$HOME/.gcloud/bin:$PATH:$HOME/.pyenv/shims:$HOME/.config/tmux/plugins/tmuxifier/bin
 export PYENV_ROOT="$HOME/.pyenv"
 
 # Path to your oh-my-zsh installation.
@@ -74,8 +74,8 @@ ZSH_THEME="agnoster"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
-	git 
-	virtualenv 
+	git
+	virtualenv
 	poetry
   tmux
 )
@@ -176,3 +176,5 @@ export PATH="$PNPM_HOME:$PATH"
 # bun
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
+
+eval "$(tmuxifier init -)"
