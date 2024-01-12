@@ -177,4 +177,6 @@ export PATH="$PNPM_HOME:$PATH"
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
 
+export TMUXIFIER_LAYOUT_PATH="$HOME/.config/tmuxifier/.tmux-layouts"
+
 eval "$(tmuxifier init -)"
