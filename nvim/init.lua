@@ -1,3 +1,6 @@
+vim.g.loaded_netrw = 1
+vim.g.loaded_netrwPlugin = 1
+
 -- -- bootstrap lazy.nvim, LazyVim and your plugins
 -- require("config.lazy")
 
@@ -53,6 +56,16 @@ local plugins = {
     "nvim-telescope/telescope-file-browser.nvim",
     dependencies = { "nvim-telescope/telescope.nvim", "nvim-lua/plenary.nvim" }
   }
+  -- {
+  --   "nvim-neo-tree/neo-tree.nvim",
+  --   branch = "v3.x",
+  --   dependencies = {
+  --     "nvim-lua/plenary.nvim",
+  --     "nvim-tree/nvim-web-devicons", -- not strictly required, but recommended
+  --     "MunifTanjim/nui.nvim",
+  --     -- "3rd/image.nvim", -- Optional image support in preview window: See `# Preview Mode` for more information
+  --   }
+  -- }
 }
 local opts = {}
 
@@ -77,7 +90,21 @@ config.setup({
   indent = { enable = true }
 })
 
-require("nvim-tree").setup {}
+-- require("nvim-tree").setup {}
+-- require("nvim-tree").setup({
+--   sort = {
+--     sorter = "case_sensitive",
+--   },
+--   view = {
+--     width = 30,
+--   },
+--   renderer = {
+--     group_empty = true,
+--   },
+--   filters = {
+--     dotfiles = false,
+--   },
+-- })
 -- require("oil").setup({
 --   default_file_explorer = true,
 --   delete_to_trash = true,
@@ -103,3 +130,10 @@ require("nvim-tree").setup {}
 
 require("catppuccin").setup()
 vim.cmd.colorscheme "catppuccin"
+
+vim.api.nvim_set_keymap(
+  "n",
+  "<space>fb",
+  ":Telescope file_browser path=%:p:h select_buffer=true<CR>",
+  { noremap = true }
+)

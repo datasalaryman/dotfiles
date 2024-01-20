@@ -465,3 +465,5 @@ set -g @plugin 'jimeh/tmuxifier'
 #
 # "$@"
 # # /!\ do not remove the previous line
+
+eval "$(tmuxifier init -)"

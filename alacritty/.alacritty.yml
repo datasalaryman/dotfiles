@@ -448,7 +448,7 @@ shell:
   # args:
   #   - -l
   #   - -c
-  #   - "/opt/homebrew/bin/tmux new-session -A -s default -f ~/.config/tmux/tmux.conf"
+  #   - "/opt/homebrew/bin/tmux new-session -A -s default"
   # program: /opt/homebrew/bin/tmux
 
 
