@@ -137,7 +137,6 @@ export SYSTEM_VERSION_COMPAT=1
 # load rbenv
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init - --no-rehash)"
-eval "$(fnm env --use-on-cd)"
 
 # Add solana to path
 # export PATH="/Users/joseendrinal/.local/share/solana/install/active_release/bin:$PATH"
@@ -180,3 +179,7 @@ export PATH="$PATH:$HOME/.config/tmux/plugins/tmuxifier/bin"
 ZSH_TMUX_DEFAULT_SESSION_NAME=default
 
 ZSH_TMUX_CONFIG=$HOME/.config/tmux/tmux.conf
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
