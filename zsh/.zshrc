@@ -1,7 +1,7 @@
 # Fig pre block. Keep at the top of this file.
 [[ -f "$HOME/.fig/shell/zshrc.pre.zsh" ]] && builtin source "$HOME/.fig/shell/zshrc.pre.zsh"
 # If you come from bash you might have to change your $PATH.
-export PATH=$HOME/bin:$HOME/.local/bin:/opt/homebrew/bin:/opt/homebrew/opt/node@18/bin:$HOME/.gcloud/bin:$PATH
+export PATH=$HOME/bin:$HOME/.local/bin:/opt/homebrew/bin:/opt/homebrew/opt/node@18/bin:$HOME/.gcloud/bin:$HOME/.avm/bin:$PATH
 export PYENV_ROOT="$HOME/.pyenv"
 
 # Path to your oh-my-zsh installation.
