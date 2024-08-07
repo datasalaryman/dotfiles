@@ -72,7 +72,9 @@ local opts = {}
 require("lazy").setup(plugins, opts)
 
 local builtin = require("telescope.builtin")
-vim.keymap.set('n', '<leader>ff', builtin.find_files, {})
+vim.keymap.set('n', '<leader>ff', function() builtin.find_files({
+  find_command = { "rg", "--files", "--hidden", "--glob", "!**/.git/*" }
+}) end, {})
 vim.keymap.set('n', '<leader>fg', builtin.live_grep, {})
 require("telescope").load_extension "file_browser"
 -- open file_browser with the path of the current buffer
