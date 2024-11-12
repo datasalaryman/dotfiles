@@ -55,7 +55,7 @@ local plugins = {
   {
     "nvim-telescope/telescope-file-browser.nvim",
     dependencies = { "nvim-telescope/telescope.nvim", "nvim-lua/plenary.nvim" }
-  }
+  }, 
   -- {
   --   "nvim-neo-tree/neo-tree.nvim",
   --   branch = "v3.x",
@@ -66,6 +66,23 @@ local plugins = {
   --     -- "3rd/image.nvim", -- Optional image support in preview window: See `# Preview Mode` for more information
   --   }
   -- }
+  {
+    "kawre/leetcode.nvim",
+    build = ":TSUpdate html",
+    dependencies = {
+      "nvim-telescope/telescope.nvim",
+      "nvim-lua/plenary.nvim", -- required by telescope
+      "MunifTanjim/nui.nvim",
+
+        -- optional
+      "nvim-treesitter/nvim-treesitter",
+      "rcarriga/nvim-notify",
+      "nvim-tree/nvim-web-devicons",
+    },
+    opts = {
+        -- configuration goes here
+    },
+  }, 
 }
 local opts = {}
 
