@@ -10,6 +10,7 @@ vim.cmd("set softtabstop=2")
 vim.cmd("set shiftwidth=2")
 vim.cmd("set number")
 vim.g.mapleader = " " -- Make sure to set `mapleader` before lazy so your mappings are correct
+vim.keymap.set('n', '<C-t>', '<cmd>tabnew<cr>')
 
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 
