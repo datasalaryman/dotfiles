@@ -148,8 +148,8 @@ export TERMINFO_DIRS=$TERMINFO_DIRS:$HOME/.local/share/terminfo
 
 eval "$(zoxide init zsh)"
 
-. $HOME/.nvm/nvm.sh
-. $HOME/.nvm/bash_completion
+#. $HOME/.nvm/nvm.sh
+#. $HOME/.nvm/bash_completion
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
@@ -180,6 +180,6 @@ ZSH_TMUX_DEFAULT_SESSION_NAME=default
 
 ZSH_TMUX_CONFIG=$HOME/.config/tmux/tmux.conf
 
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+# export NVM_DIR="$HOME/.nvm"
+# [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
+# [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
