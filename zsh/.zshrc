@@ -183,3 +183,21 @@ ZSH_TMUX_CONFIG=$HOME/.config/tmux/tmux.conf
 # export NVM_DIR="$HOME/.nvm"
 # [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
 # [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+# rust
+# export RUST_HOME="$HOME/.cargo/env"
+# case ":$PATH:" in
+#   *":$RUST_HOME:"*) ;;
+#   *) export PATH="$RUST_HOME:$PATH" ;;
+# esac
+# rust end
+
+
+# solana
+# export SOLANA_HOME="$HOME/.local/share/solana/install/active_release/bin"
+# case ":$PATH:" in
+#   *":$SOLANA_HOME:"*) ;;
+#   *) export PATH="$SOLANA_HOME:$PATH" ;;
+# esac
+# solana end
+
