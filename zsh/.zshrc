@@ -201,3 +201,4 @@ ZSH_TMUX_CONFIG=$HOME/.config/tmux/tmux.conf
 # esac
 # solana end
 
+fpath=($fpath ~/.zsh/completion)
