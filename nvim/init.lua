@@ -108,7 +108,7 @@ vim.api.nvim_set_keymap(
 
 local config = require("nvim-treesitter.configs")
 config.setup({
-  ensure_installed = { "lua", "typescript", "json", "javascript", "python", "terraform" },
+  ensure_installed = { "lua", "typescript", "json", "javascript", "python", "terraform", "astro" },
   highlight = { enable = true },
   indent = { enable = true }
 })
