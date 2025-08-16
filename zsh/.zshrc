@@ -202,3 +202,4 @@ ZSH_TMUX_CONFIG=$HOME/.config/tmux/tmux.conf
 # solana end
 
 fpath=($fpath ~/.zsh/completion)
+export PATH="$HOME/.local/share/solana/install/active_release/bin:$PATH"
