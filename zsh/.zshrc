@@ -206,3 +206,14 @@ export NVM_DIR="$HOME/.nvm"
 
 fpath=($fpath ~/.zsh/completion)
 export PATH="$HOME/.local/share/solana/install/active_release/bin:$PATH"
+
+# opencode
+export PATH=/Users/joseendrinal/.opencode/bin:$PATH
+
+# java
+export JAVA_HOME=/Library/Java/JavaVirtualMachines/zulu-17.jdk/Contents/Home
+
+# android sdk
+export ANDROID_HOME=$HOME/Library/Android/sdk
+export PATH=$PATH:$ANDROID_HOME/emulator
+export PATH=$PATH:$ANDROID_HOME/platform-tools
