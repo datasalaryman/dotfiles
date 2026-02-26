@@ -123,6 +123,7 @@ alias solcheck='f() { solana confirm -v --commitment=finalized --output=json $1 
 export CPPFLAGS="-I$(brew --prefix zlib)/include -I$(brew --prefix bzip2)/include -I$(brew --prefix openblas)/include -I$(brew --prefix node@18)/include -I$(brew --prefix llvm)/include -I$(brew --prefix openjdk)/include"
 export CFLAGS="-I$(brew --prefix openssl)/include -I$(brew --prefix bzip2)/include -I$(brew --prefix readline)/include -I$(xcrun --show-sdk-path)/usr/include"
 export LDFLAGS="-L$(brew --prefix openssl)/lib -L$(brew --prefix readline)/lib -L$(brew --prefix zlib)/lib -L$(brew --prefix bzip2)/lib -L$(brew --prefix openblas)/lib -L$(brew --prefix node@18)/lib -L$(brew --prefix llvm)/lib"
+export DYLD_LIBRARY_PATH="/opt/homebrew/opt/llvm/lib:$DYLD_LIBRARY_PATH"
 export OPENSSL_ROOT_DIR="$(brew --prefix openssl)"
 
 
