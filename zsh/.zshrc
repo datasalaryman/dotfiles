@@ -1,12 +1,16 @@
 export PATH=$HOME/bin:$HOME/.local/bin:/opt/homebrew/bin:$HOME/.gcloud/bin:$HOME/.avm/bin:$HOME/.local/share/nvim/mason/bin/:$PATH
 
 export ZSH="/Users/joseendrinal/.oh-my-zsh"
-ZSH_THEME="agnoster"
+ZSH_THEME="Gozilla"
+export FZF_BASE=/Users/joseendrinal/.asdf/installs/fzf/0.70.0
 
 plugins=(
 	git
 	virtualenv
-	poetry
+	zsh-autosuggestions
+	zsh-syntax-highlighting
+	fzf
+	docker
 )
 
 source $ZSH/oh-my-zsh.sh
