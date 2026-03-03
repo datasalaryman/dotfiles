@@ -1,0 +1,24 @@
+Include ~/.orbstack/ssh/config
+
+Host *
+  IgnoreUnknown AddKeysToAgent,UseKeychain
+  UseKeychain yes
+  AddKeysToAgent yes
+  IdentityFile ~/.ssh/linode
+  IdentityFile ~/.ssh/github
+  IdentityFile ~/.ssh/enzo_key_pair_aws.pem
+  ServerAliveInterval 10
+
+Host github.com
+  HostName github.com
+  IgnoreUnknown AddKeysToAgent,UseKeychain
+  UseKeychain yes
+  AddKeysToAgent yes
+
+Host dev_server
+  HostName 100.111.139.23 
+  IdentityFile ~/.ssh/github
+  User ubuntu
+
+Host *
+  AddKeysToAgent yes

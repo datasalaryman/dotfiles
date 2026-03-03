@@ -1,0 +1,16 @@
+# [user]
+#	email = datasalaryman@protonmail.com
+#	name = Data Salaryman
+# [init]
+#	defaultBranch = main
+# [pull]
+#	rebase = true
+# [core]
+#	excludesfile = /Users/joseendrinal/.gitignore
+
+[includeIf "gitdir:~/ongoing/personal/"]
+  path = ~/ongoing/personal/.gitconfig
+[includeIf "gitdir:~/ongoing/exponent/"]
+  path = ~/ongoing/exponent/.gitconfig
+[includeIf "gitdir:~/ongoing/blueshift/"]
+  path = ~/ongoing/blueshift/.gitconfig
