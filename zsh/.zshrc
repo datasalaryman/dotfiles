@@ -13,7 +13,7 @@ source $ZSH/oh-my-zsh.sh
 
 alias ssh='TERM=vt100 ssh'
 alias gbclean='git branch | grep -v -e "\(main$\)\|\(dev$\)\|\(staging$\)\|\(master$\)" | xargs git branch -D'
-alias ls='exa'
+alias ls='eza'
 alias cat='bat'
 alias solcheck='f() { solana confirm -v --commitment=finalized --output=json $1 | cat | nvim };f'
 
@@ -52,8 +52,8 @@ case ":$PATH:" in
   *) export PATH="$OPENCODE_HOME/bin:$PATH" ;;
 esac
 
-# java
-export JAVA_HOME=/Library/Java/JavaVirtualMachines/zulu-17.jdk/Contents/Home
+# java (using asdf)
+export JAVA_HOME=$(asdf where java)
 
 # android sdk
 export ANDROID_HOME=$HOME/Library/Android/sdk
