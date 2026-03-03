@@ -1,3 +1,21 @@
--- Keymaps are automatically loaded on the VeryLazy event
--- Default keymaps that are always set: https://github.com/LazyVim/LazyVim/blob/main/lua/lazyvim/config/keymaps.lua
--- Add any additional keymaps here
+vim.keymap.set('n', '<C-t>', '<cmd>tabnew<cr>')
+
+vim.keymap.set("n", "gd", vim.lsp.buf.definition, { desc = "Go to definition" })
+vim.keymap.set("n", "gr", vim.lsp.buf.references, { desc = "Go to references" })
+vim.keymap.set("n", "K", vim.lsp.buf.hover, { desc = "Hover docs" })
+vim.keymap.set("n", "<leader>rn", vim.lsp.buf.rename, { desc = "Rename" })
+vim.keymap.set("n", "<leader>ca", vim.lsp.buf.code_action, { desc = "Code action" })
+vim.keymap.set("n", "<leader>f", vim.lsp.buf.format, { desc = "Format" })
+
+vim.keymap.set('n', '<leader>ff', function()
+  local builtin = require("telescope.builtin")
+  builtin.find_files({ find_command = { "rg", "--files", "--hidden", "--glob", "!**/.git/*" } })
+end, { desc = "Find files" })
+vim.keymap.set('n', '<leader>fg', function()
+  local builtin = require("telescope.builtin")
+  builtin.live_grep()
+end, { desc = "Live grep" })
+
+vim.keymap.set("n", "<space>fb", function()
+  vim.cmd("Telescope file_browser path=%:p:h select_buffer=true")
+end, { noremap = true, desc = "File browser" })
