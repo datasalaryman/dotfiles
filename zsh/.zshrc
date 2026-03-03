@@ -7,7 +7,6 @@ plugins=(
 	git
 	virtualenv
 	poetry
-  tmux
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -44,8 +43,6 @@ esac
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
 
-export TMUXIFIER_LAYOUT_PATH="$HOME/.config/tmuxifier/.tmux-layouts"
-export PATH="$PATH:$HOME/.config/tmux/plugins/tmuxifier/bin"
 
 fpath=($fpath ~/.zsh/completion)
 
