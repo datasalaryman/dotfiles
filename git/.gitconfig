@@ -14,3 +14,9 @@
   path = ~/ongoing/exponent/.gitconfig
 [includeIf "gitdir:~/ongoing/blueshift/"]
   path = ~/ongoing/blueshift/.gitconfig
+[commit]
+	gpgsign = true
+[gpg]
+	format = ssh
+[user]
+	signingkey = /Users/joseendrinal/.ssh/github.pub
