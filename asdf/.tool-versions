@@ -1,6 +1,6 @@
 python 3.14.3
 uv 0.8.22
-nodejs 20.20.0
+nodejs 22.14.0
 golang 1.26.0
 java temurin-21.0.10+7.0.LTS
 nim 2.2.8
